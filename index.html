@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- main css file -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- font Awesome Librarry -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- bootstrap Librarry  -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+<body>
+
+
+<!-- start game  -->
+<div class="start-page">
+    <p class="d-flex justify-content-center align-items-center">Enter your Name</p>
+    <div class="name">
+        <input class="theName d-flex justify-content-center align-items-center" placeholder="Enter Youe Name..." type="text">
+    </div>
+    <span class="start-game">Start Play</span>
+</div>
+<div class="over d-flex justify-content-center align-items-center">
+        <div class="end-game"></div>
+</div>
+    <div class="game">
+        <div class="content">
+            <header class="d-flex align-items-center p-3 mb-4 text-white fw-bold ">
+                <div><a href="#" title="Memory Game"><i class="fa-solid fa-puzzle-piece logo"></i></a></div>
+                <div class="main-title">Memory Game</div>
+            </header>
+            <div class="container">
+            <div class="info-game d-flex justify-content-between align-items-center p-4 text-black fs-5 fw-bold">
+                <div class="wrong-tries">
+                    Max Wrong Tries: <span>15</span>
+                </div>
+                <div class="name">
+                    Hello: <span></span>
+                </div>
+                <div class="tries">
+                    <!-- Wrong Tries: <span></span> -->
+                    <p class="text-capitalize m-0">you have: <span style="color: green;">90</span> Secounds</p>
+                </div>
+            </div>
+            <div class="game-content pb-1 pt-1 ">
+                <div class="game-box" data-movies="batman-1" >
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/batman-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="game-box"  data-movies="batman-1">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/batman-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="batman-2" >
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/batman-2.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="game-box"  data-movies="batman-2">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/batman-2.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="ironman-1">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/ironman-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="ironman-1">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/ironman-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="ironman-2">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/ironman-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="ironman-2">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/ironman-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="joker-1">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/joker-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="joker-1">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/joker-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="joker-2">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/joker-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="joker-2">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/joker-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="spiderman-1">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/spider-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="spiderman-1">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/spider-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="spiderman-2">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/spider-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="spiderman-2">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/spider-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="superman-1">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/superman-1.png" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="superman-1">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/superman-1.png" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="superman-2">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/superman-2.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="game-box" data-movies="superman-2">
+                    <div class="box front d-flex justify-content-center"></div>
+                    <div class="box back">
+                        <img src="./images/superman-2.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <audio id="success" src="./audio/success.mp3" preload="auto"></audio>
+    <audio id="fail" src="./audio/fail.mp3" preload="auto"></audio>
+    <!-- bootstrap js file -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- font Awesome Librarry -->
+    <script src="./js/all.min.js"></script>
+    <!-- main js file  -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

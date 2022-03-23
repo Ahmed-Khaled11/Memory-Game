@@ -1,0 +1,217 @@
+:root{
+    --main-color:#4D77FF;
+    --secound-color:#56BBF1;
+    --third-color:#051367;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:'Open Sans', sans-serif;
+}
+
+/* start page  */
+.start-page{
+    position: fixed;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #5d8af4b6;
+    z-index: 4;
+}
+.start-page .start-game{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FC4F4F;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.start-page .name{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+.start-page>p{
+    color:  #fff;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: var(--secound-color);
+    padding: 10px;
+}
+.game-over{
+    position: fixed;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 4, 4, 0.171);
+    z-index: 6;
+}
+.game-over .end-game{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(255, 4, 4);
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+}
+.winner{
+    position: fixed;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #0bdda952;
+    z-index: 6;
+}
+.winner .end-game{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: #198754;
+    color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 6px;
+}
+.start-page .name input[type=text]{
+    padding: 6px 50px;
+    border: 2px solid var(--main-color);
+    border-radius: 6px;
+    font-size: 20px;
+
+}
+.start-page .name input[type=text]:focus{
+    outline: none;
+    transition: 0.3s;
+}
+.start-page .name input[type=text]::placeholder{
+    color: #56BBF1;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.start-page .name input[type=text]:focus::placeholder{
+    color: transparent;
+    caret-color: var(--main-color);
+
+}
+/* start page  */
+
+/* start header  */
+header{
+    background-color: var(--main-color);
+}
+header .main-title{
+    font-size: 35px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header .logo{
+    background-color: white;
+    color: var(--main-color);
+    font-size: 30px;
+    border: 1px solid var(--secound-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+header .name{
+    font-size: 20px;
+}
+/* end header  */
+/* start info game  */
+.info-game{
+    background-color: #EEEEEE;
+    border: 4px solid var(--secound-color);
+    border-radius: 6px;
+}
+.info-game .name span{
+    color: var(--secound-color);
+    text-transform: capitalize;
+}
+.info-game .name span::before{
+    content: "- ";
+    color: var(--secound-color);
+}
+.info-game .name span::after{
+    content: " -";
+    color: var(--secound-color);
+}
+.info-game .tries span,
+.info-game .wrong-tries span
+{
+    color: #D82148;
+}
+/* .info-game .sec{
+    tex
+} */
+/* end info game  */
+/* start game content  */
+.game-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10px;
+}
+.game-content.stop-click{
+    pointer-events: none;
+}
+.game-content .game-box{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin: 10px ;
+    cursor: pointer;
+    transition: transform 0.4s;
+    transform-style: preserve-3d;
+    flex: 1 0 200px;
+    border: 4px solid var(--main-color);
+}
+.game-content .game-box .back img{
+    width: 100%;
+    height: 142px;;
+}
+.game-content .game-box .front{
+        background-color:#333;
+        line-height: 150px;
+}
+.game-content .game-box .front::before{
+    content: "!";
+    position: absolute;
+    color: #DFF6FF;
+    font-size: 90px;
+    font-weight: bold;
+;
+}
+.game-content .game-box .back{
+        background-color:#EEEEEE ;
+        transform: rotateY(180deg);
+}
+.game-content .game-box .box{
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333; 
+    backface-visibility: hidden; 
+}
+.game-content .game-box.flip,
+.game-content .game-box.flip-two
+{
+    transform: rotateY(180deg);
+}
+/* end game content  */
