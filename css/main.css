@@ -1,8 +1,7 @@
 :root{
-    --main-color:#4D77FF;
-    --secound-color:#56BBF1;
-    --third-color:#051367;
-
+    --main-color:#0084A0B0;
+    --secound-color:#00CFD9;
+    --third-color:#007488;
 }
 *{
     box-sizing: border-box;
@@ -42,13 +41,6 @@ body{
     top: 30%;
     left: 50%;
     transform: translate(-50%, -30%);
-}
-.start-page>p{
-    color:  #fff;
-    font-size: 40px;
-    font-weight: bold;
-    background-color: var(--secound-color);
-    padding: 10px;
 }
 .game-over{
     position: fixed;
@@ -95,7 +87,10 @@ body{
     border: 2px solid var(--main-color);
     border-radius: 6px;
     font-size: 20px;
-
+    color: var(--secound-color);
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
 }
 .start-page .name input[type=text]:focus{
     outline: none;
