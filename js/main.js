@@ -13,7 +13,7 @@ startButton.onclick = function () {
         box.classList.add("flip");
             setTimeout(() => {
             box.classList.remove("flip");
-        }, 2000);
+        }, 3000);
     })
 
     let stopControlTime = setInterval(() => {
@@ -126,3 +126,10 @@ function winnerGame() {
         controlTime.innerHTML = "0";
     }
 }
+startButton.addEventListener("click", function () {
+    window.scrollTo({
+        left: 0,
+        top: 100,
+            behavior:"smooth"
+  });
+});
